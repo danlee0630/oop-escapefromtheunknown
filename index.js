@@ -248,30 +248,6 @@ class Enemy extends Character {
 //       //          //  Hall  //  point(E) //
 //////////////////////////////////////////////
 
-
-// const Kitchen = new Room("Kitchen");
-// Kitchen.description = "a short narrow room with worktops on one side and oven on the other side, there is aburning fire in the oven , you found Fireextinguisher near the oven ";
-
-// const GamesRoom = new Room("Games Room");
-// GamesRoom.description = "a large room with a cupboard at in the middle";
-// const Hall = new Room("Hall");
-// Hall.description = "a small room with dinner table and water cooler";
-// const Field = new Room("Field");
-// Field.description = "a space with a group of trees and flowers  with large door in the ground";
-
-
-// Kitchen.linkRoom("south", GamesRoom);
-// Kitchen.linkRoom("west", Field);
-// MasterRoom.linkRoom("north", Kitchen);
-// MasterRoom.linkRoom("west", GamesRoom);
-// GamesRoom.linkRoom("north", Kitchen);
-// GamesRoom.linkRoom("west", Hall);
-// Hall.linkRoom("east", GamesRoom);
-// Hall.linkRoom("north", Field);
-
-// Field.linkRoom("east", Kitchen);
-// Field.linkRoom("south", Hall);
-
 const Forest = new Room("house of Foggy Forest");
 Forest.description = "a room with bed, chair, table, sofa and cupboard, also, there a dagger on the floor, you can see a fire is on somewhere outside window,";
 const Grassland = new Room("Grassland")
@@ -526,7 +502,7 @@ function commandHandler(command, character, room) {
           document.getElementById("buttonarea2").innerHTML = "> A portal linking with your world appeared, you escape from the 'unknown' successfully. "
 
         } else {
-          document.getElementById("buttonarea").innerHTML = character.name + " has defeated you. You have not found the right weapon to kill " + character.name + " yet.";
+          document.getElementById("buttonarea").innerHTML = character.name + " has defeated you. Try to search something to equip yourself.";
           document.getElementById("buttonarea2").innerHTML = "> You Lost,  GAME OVER "
           break;
         }
