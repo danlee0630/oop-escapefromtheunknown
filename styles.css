@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+}
+
+#title {
+  font-style: italic;
+}
+
+::placeholder {
+  color: darkgray;
+  opacity: 1;
+}
+
+#gamearea {
+  position: absolute;
+  background-image: url("background.jpg");
+  background-size: cover;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  border-radius: 50px;
+  color: white;
+  padding: 20px;
+}
+
+input {
+  color: white;
+  font-weight: 200;
+  background-color: gray;
+  border: 0px;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: gray;
+}
+
+.btn {
+  color: white;
+  background-color: gray;
+}
+
+.b {
+  color: red
+}
