@@ -370,23 +370,23 @@ const Key = new Item("key");
 Key.description = "The Key to mislead player";
 
 const Door = new Item("Door");
-Door.description = " the door is open to adeep well ";
+Door.description = " The door open will release monster ";
 
 const Medusa = new Enemy("Medusa");
 Medusa.conversation = "the key is the key...";
-Medusa.description = " is standing in the middle of the Grassland, she is eccentric and terrifying. ";
+Medusa.description = " standing in the middle of the Grassland, she is eccentric and terrifying. ";
 Medusa.pronoun = "she";
 Medusa.gift = Key;
 
 const Medusa2 = new Enemy("Medusa");
 Medusa2.conversation = " You never know the truth, because I am the truth!!! ";
-Medusa2.description = " is looking at you, she looks terrible and against ";
+Medusa2.description = " looking at you, she looks terrible and against. ";
 Medusa2.pronoun = "she";
 Medusa2.weakness = Dagger;
 
 const Hercules = new Enemy("Hercules");
-Hercules.conversation = "Don't touch me hahaha .....";
-Hercules.description = "is sitting next to you , he is strong, tall and has a huge red eyes";
+Hercules.conversation = " Time to leave, this world is falling...... ";
+Hercules.description = "sitting next to you , he is strong, tall and has a huge red eyes.";
 Hercules.pronoun = "he";
 Hercules.gift = Dagger;
 
@@ -472,7 +472,7 @@ function commandHandler(command, character, room) {
           break;
         }
       } else {
-        alert("There is nobody in front of you, you sure you see somebody here......?");
+        alert("There is nobody in front of you, you sure you see somebody......?");
       }
       break;
 
@@ -549,4 +549,3 @@ function startGame() {
     }
   });
 }
-
